@@ -1,0 +1,116 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+hr {
+  height: 2px;
+  background-color: #333;
+  border: none;
+  margin: 40px 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+.skill {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 40px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 40px;
+  background-color: #008080;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  animation: progress-bar 2s ease-in-out forwards;
+}
+
+.progress-bar span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+.progress-bar.html {
+  animation-delay: 0.2s;
+  width: 90%;
+}
+
+.progress-bar.css {
+  animation-delay: 0.4s;
+  width: 75%;
+}
+
+.progress-bar.django {
+  animation-delay: 0.6s;
+  width: 65%;
+}
+
+.progress-bar.node {
+  animation-delay: 0.8s;
+  width: 50%;
+}
+
+.progress-bar.cybersecurity {
+  animation-delay: 1s;
+  width: 80%;
+}
+
+@keyframes progress-bar {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #008080;
+  color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
